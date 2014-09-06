@@ -22,6 +22,7 @@ FAKEIT = 1
 FAKEIT_line = 0
 OLD_VERSION = 0
 NUM_TRIPS = 3
+FUELUP_TRIP = NUM_TRIPS + 1
 if FAKEIT == 1:
     PERM_PARAMS_FILE = "./perm_params.txt"
     TEMP_PARAMS_FILE = "./temp_params.txt"
@@ -42,6 +43,22 @@ else:
     FUELUP_DATA_FILE_IN = "/ramcache/FUELUP_DATA_FILE_IN"
 PARAMS_SAVE_INTERVAL = 10
  
+class tank():
+
+       def __init__(self):
+		self.distance = float(0)
+		self.fuel = float(0 )
+		self.cost_l = float(0 )
+		self.total_cost = float(0 )
+		self.mpg = float(0 )
+
+       def save_tank(self):
+                params_file = open(FUELUPS_DATABASE,"ab+")
+                params_file.write(str(self.distance)+","+str(self.fuel)+","+str(self.cost_l)+","+str(self.total_cost)+","+str(self.mpg)+"\n")
+                params_file.close()
+ 
+
+
 class MPG_fuelup_data():
 
        def __init__(self):
@@ -104,13 +121,16 @@ class MPG_Params():
 		self.this_run_fuel_ml = float(0 )
 		self.this_run_distance_DFCO_cm = float(0 )
 		self.fuel_price = float(1.32 )
-                self.trips = [0] * NUM_TRIPS
+                self.trips = [0] * (NUM_TRIPS + 1)
 	        self.instant_mpg_from_dist = 0
                 self.previous_rpm_value = 0
                 self.this_run_MPG = 0
                 self.this_run_duration = 0
                 self.params_save_count = 1
-    	        for i in range(0,NUM_TRIPS):
+                self.lasttank = tank()
+                self.params.fuel_adjust = float(1)
+                self.params.speed_adjust = float(1)
+    	        for i in range(0,(NUM_TRIPS +1)):
                     trip = MPG_trip()
                     self.trips[i] =  trip
                     #self.trips.append ( trip)
@@ -179,7 +199,8 @@ class OBD_Capture():
         self.smooth_vss = float(0)
         self.smooth_cons = float(0)
         self.throttle_pos = 0
- 
+        self.fuelup_data = MPG_fuelup_data()
+
     	for i in range(0,self.NBSMOOTH):
             self.t_speed[i]=0;
     	for i in range(0,self.NBSMOOTH):
@@ -238,9 +259,24 @@ class OBD_Capture():
 			self.params.trips[i].reset()
                         os.remove(RESET_TRIP_FILE+str(i))
 	if os.path.isfile(RESET_CURRENT_FILE):
-                print "Resetting TRIP "+str(i)
+                print "Resetting CURRENT "
 		self.params.reset_current()
                 os.remove(RESET_CURRENT_FILE)
+	if os.path.isfile(FUELUP_COM_FILE ):
+                print "FUELUP TIME "
+                self.fuelup_data.load_fuelup()
+                if self.fuelup_data.carplayer_fuelup_distance_miles <> self.fuelup_data.mpg_fuelup_distance_miles:
+                    self.params.speed_adjust = self.fuelup_data.carplayer_fuelup_distance_miles / self.fuelup_data.mpg_fuelup_distance_miles
+                if self.fuelup_data.carplayer_fuelup_fuel_l <> self.fuelup_data.mpg_fuelup_fuel_l:
+                    self.params.fuel_adjust = self.fuelup_data.carplayer_fuelup_fuel_l / self.fuelup_data.mpg_fuelup_fuel_l
+		self.params.lasttank.distance = self.fuelup_data.carplayer_fuelup_distance_miles 
+		self.params.lasttank.fuel = self.fuelup_data.carplayer_fuelup_fuel_l
+		self.params.lasttank.cost_l = self.fuelup_data.carplayer_fuelup_fuel_cost
+		self.params.lasttank.total_cost = float(self.params.lasttank.fuel * self.params.lasttank.cost_l )
+		self.params.lasttank.mpg = float(self.params.lasttank.distance / (self.params.lasttank.fuel / 4.54) )
+                self.params.lasttank.save_tank()
+		self.params.trips[FUELUP_TRIP].reset()
+                os.remove(FUELUP_COM_FILE )
  
     def find_obd_sensorindex(self, sensorName):
 	index = 0
@@ -538,9 +574,8 @@ class OBD_Capture():
 
         if rpm_value == 0 and self.params.previous_rpm_value >0:
         # we've just stopped the engine so save a fuelup file!
-        	fuelup_data = MPG_fuelup_data()
-                fuelup_data.copy_current_params(self.params)
-                fuelup_data.save_fuelup()
+                self.fuelup_data.copy_current_params(self.params)
+                self.fuelup_data.save_fuelup()
         self.params.previous_rpm_value = rpm_value
 
         self.throttle_pos = throttle_value
@@ -609,7 +644,7 @@ class OBD_Capture():
        	if self.tindex == self.NBSMOOTH:
        		self.tindex = 0
 
-    	for i in range(0,NUM_TRIPS):
+    	for i in range(0,NUM_TRIPS + 1):
                 self.params.trips[i].trip_fuel_ml += delta_fuel_ml
                 self.params.trips[i].trip_distance_cm += delta_distance_cm
                 if self.DFCO == 1:
