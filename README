@@ -1,3 +1,11 @@
+Carplayer - an MP3 player for the car using a raspberry pi, 16x2 LCD and numeric keypad for control.
+
+
+Incredibliy heavilly reliant upon ncmpy by Cyker Way (see below)
+
+Also includes an MPG meter using OBD2 protocol, using the pyobd library (modified to make it produce unmodified results rather than US measurements)
+
+
 ncmpy - a [Python + Curses]-based MPD client.
 
 Made by Cyker Way 2011.
