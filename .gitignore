@@ -1,0 +1,6 @@
+.swp
+.lrc
+.pyc
+MANIFEST
+build/
+dist/

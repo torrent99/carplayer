@@ -1,0 +1,9 @@
+[Unit]
+Description=numlockOnTty
+
+[Service]
+ExecStart=/usr/bin/numlockOnTty
+
+[Install]
+WantedBy=multi-user.target
+

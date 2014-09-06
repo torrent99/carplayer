@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Ybalrid on 01/02/13
+#This script set the numpad on for the 6 first tty
+
+for tty in /dev/tty{1..6}
+do
+    /usr/bin/setleds -D +num < "$tty";
+done
+

@@ -1,0 +1,1152 @@
+extra/accerciser 3.12.0-1 (gnome-extra)
+    Interactive Python accessibility explorer for the GNOME desktop
+extra/eric 5.4.3-1
+    A full-featured Python 3.x and Ruby IDE in PyQt4
+extra/eric4 4.5.21-1
+    A full-featured Python 2.x and Ruby IDE in PyQt4
+extra/gnome-python 2.28.1-9
+    PyGNOME Python extension module
+extra/gnome-python-desktop 2.32.0-15
+    Python bindings for the GNOME desktop environment
+extra/gnome-python-extras 2.25.3-13
+    Gnome Python interfaces for libraries not part of the core platform
+extra/gstreamer0.10-python 0.10.22-2
+    Python bindings for GStreamer 0.10
+extra/gvim-python3 7.4.335-4
+    Vi Improved, a highly configurable, improved version of the vi text editor (with advanced features, such as a GUI) with python 3 support
+extra/kdebindings-kross-python 4.13.2-1 (kdebindings)
+    Python2 language interpreters to enable in-process scripting with Kross
+extra/kdebindings-python 4.13.2-1 (kdebindings)
+    A set of Python 3.x bindings for KDE
+extra/kdebindings-python-common 4.13.2-1 (kdebindings)
+    Common files shared between python2 and python3 kdebindings
+extra/kdebindings-python2 4.13.2-1 (kdebindings)
+    A set of Python 2.x bindings for KDE
+extra/kdevelop-python 1.6.1-1
+    Python language and documentation plugin for KDevelop
+extra/kdevelop-python2 1.6.0-2
+    Python 2 language and documentation plugin for KDevelop
+extra/libreoffice-common 4.2.5-1 (libreoffice)
+    Common files for LibreOffice - a productivity suite that is compatible with other major office suites
+extra/mysql-python 1.2.5-1
+    MySQL support for Python
+extra/pyalpm 0.6.2-2
+    Libalpm bindings for Python 3
+extra/pygtk 2.24.0-4
+    Python bindings for the GTK widget set
+extra/pygtksourceview2 2.10.1-5
+    Python bindings for gtksourceview2
+extra/pyorbit 2.24.0-5
+    Python bindings for ORBit2
+extra/pyqt4-common 4.11.1-1
+    Common PyQt files shared between python-pyqt4 and python2-pyqt4
+extra/pyqt5-common 5.3.1-1
+    Common PyQt files shared between python-pyqt5 and python2-pyqt5
+extra/pyrex 0.9.9-4
+    Language for writing Python extension modules
+extra/python 3.4.1-1 [installed]
+    Next generation of the python high-level scripting language
+extra/python-astroid 1.1.1-1
+    Useful miscellaneous modules used by Logilab projects
+extra/python-atspi 2.12.0-1
+    Python 3 bindings for at-spi
+extra/python-beaker 1.6.4-2
+    Caching and sessions WSGI middleware for use with web applications and stand-alone Python scripts and applications
+extra/python-cairo 1.10.0-4
+    Python bindings for the cairo graphics library
+extra/python-cffi 0.8.6-1
+    Foreign Function Interface for Python calling C code
+extra/python-characteristic 0.1.0-1
+    Service identity verification for pyOpenSSL
+extra/python-chardet 2.2.1-2
+    Python3 module for character encoding auto-detection
+extra/python-crypto 2.6.1-2
+    Collection of cryptographic algorithms and protocols, implemented for use from Python 3.
+extra/python-cryptography 0.5.2-1
+    A package designed to expose cryptographic recipes and primitives to Python developers
+extra/python-cssselect 0.9.1-2
+    A Python3 library that parses CSS3 Selectors and translates them to XPath 1.0
+extra/python-dbus 1.2.0-3
+    Python 3.3 bindings for DBUS
+extra/python-dbus-common 1.2.0-3
+    Common dbus-python files shared between python-dbus and python2-dbus
+extra/python-defusedxml 0.4.1-1
+    XML bomb protection for Python stdlib modules
+extra/python-django 1.6.5-1
+    A high-level Python Web framework that encourages rapid development and clean design
+extra/python-feedparser 5.1.3-3
+    Parse RSS and Atom feeds in Python
+extra/python-gobject 3.12.2-1
+    Python 3 bindings for GObject
+extra/python-gobject2 2.28.6-10
+    Python 3 bindings for GObject2
+extra/python-logilab-common 0.62.0-1
+    Useful miscellaneous modules used by Logilab projects
+extra/python-lxml 3.3.5-1
+    Python3 binding for the libxml2 and libxslt libraries
+extra/python-lxml-docs 3.3.5-1
+    Python binding for the libxml2 and libxslt libraries (docs)
+extra/python-mako 1.0.0-1
+    Hyperfast and lightweight templating for the Python2 platform
+extra/python-markupsafe 0.23-1
+    Implements a XML/HTML/XHTML Markup safe string for Python
+extra/python-nose 1.3.3-1
+    A discovery-based unittest extension
+extra/python-nose-doc 1.3.3-1
+    Nose documentation and examples
+extra/python-numpy 1.8.1-1
+    Scientific tools for Python
+extra/python-opengl 3.1.0-1
+    The cross platform Python binding to OpenGL and related APIs
+extra/python-pip 1.5.6-1
+    An easy_install replacement for installing pypi python packages
+extra/python-ply 3.4-4
+    Implementation of lex and yacc parsing tools
+extra/python-pyasn1 0.1.7-2
+    ASN.1 library for Python 3
+extra/python-pyasn1-modules 0.0.5-1
+    A collection of ASN.1-based protocols modules
+extra/python-pycparser 2.10-4
+    C parser and AST generator written in Python
+extra/python-pycurl 7.19.3.1-2
+    A Python 3.x interface to libcurl
+extra/python-pyelftools 0.21-2
+    Python library for analyzing ELF files and DWARF debugging information
+extra/python-pylint 1.2.1-1
+    Analyzes Python code looking for bugs and signs of poor quality
+extra/python-pyopenssl 0.14-3
+    Python3 wrapper module around the OpenSSL library
+extra/python-pyqt4 4.11.1-1
+    A set of Python 3.x bindings for the Qt toolkit
+extra/python-pyqt5 5.3.1-1
+    A set of Python 3.x bindings for the Qt5 toolkit
+extra/python-qscintilla 2.8.3-2
+    Python 3.x bindings for QScintilla2
+extra/python-qscintilla-common 2.8.3-2
+    Common python qscintilla bindings files shared between python-qscintilla and python2-qscintilla
+extra/python-rdflib 4.1.2-1
+    A Python library for working with RDF, a simple yet powerful language for representing information
+extra/python-service-identity 1.0.0-1
+    Service identity verification for pyOpenSSL
+extra/python-setuptools 1:5.4.1-1
+    Easily download, build, install, upgrade, and uninstall Python packages
+extra/python-sgmllib 5.1.3-3
+    Port of sgmllib to python-3
+extra/python-sip 4.16.2-1
+    Python 3.x SIP bindings for C and C++ libraries
+extra/python-twisted 14.0.0-1
+    Asynchronous networking framework written in Python
+extra/python-urwid 1.2.1-1
+    Urwid is a curses-based user interface library.
+extra/python-virtualenv 1.11.6-1
+    Virtual Python Environment builder
+extra/python-xdg 0.25-2
+    Python library to access freedesktop.org standards
+extra/python-zope-interface 4.1.1-1
+    Zope Interfaces for Python 3.x
+extra/python2 2.7.8-1 [installed]
+    A high-level scripting language
+extra/python2-antlr2 2.7.7-6
+    Language recognition tool providing a framework to build grammatical parsers
+extra/python2-astroid 1.1.1-1
+    Useful miscellaneous modules used by Logilab projects
+extra/python2-atspi 2.12.0-1
+    Python 2 bindings for at-spi
+extra/python2-beaker 1.6.4-2
+    Caching and sessions WSGI middleware for use with web applications and stand-alone Python scripts and applications
+extra/python2-bonobo 2.28.1-9
+    Python bindings for interacting with Bonobo
+extra/python2-cairo 1.10.0-2
+    Python2 bindings for the cairo graphics library
+extra/python2-cffi 0.8.6-1
+    Foreign Function Interface for Python calling C code
+extra/python2-characteristic 0.1.0-1
+    Service identity verification for pyOpenSSL
+extra/python2-chardet 2.2.1-2
+    Python2 module for character encoding auto-detection
+extra/python2-crypto 2.6.1-2
+    Collection of cryptographic algorithms and protocols, implemented for use from Python 2.
+extra/python2-cryptography 0.5.2-1
+    A package designed to expose cryptographic recipes and primitives to Python developers
+extra/python2-cssselect 0.9.1-2
+    A Python2 library that parses CSS3 Selectors and translates them to XPath 1.0
+extra/python2-dbus 1.2.0-3
+    Python 2.7 bindings for DBUS
+extra/python2-defusedxml 0.4.1-1
+    XML bomb protection for Python stdlib modules
+extra/python2-django 1.6.5-1
+    A high-level Python Web framework that encourages rapid development and clean design
+extra/python2-egenix-mx-base 3.2.7-1
+    A collection of Python tools
+extra/python2-egg 2.25.3-13
+    Python bindings for interacting with egg
+extra/python2-feedparser 5.1.3-3
+    Parse RSS and Atom feeds in Python2
+extra/python2-fpconst 0.7.3-5
+    Utilities for handling IEEE 754 floating point special values
+extra/python2-gconf 2.28.1-9
+    Python bindings for interacting with GConf
+extra/python2-gdata 2.0.18-1
+    Python client library for Google data APIs
+extra/python2-geoip 1.2.9-1
+    Python bindings for the GeoIP IP-to-country resolver library
+extra/python2-gnomecanvas 2.28.1-9
+    Python bindings for the GNOME Canvas
+extra/python2-gnomedesktop 2.32.0-15
+    Python bindings for gnome-desktop 2.x
+extra/python2-gnomekeyring 2.32.0-15
+    Python bindings for libgnome-keyring
+extra/python2-gnomevfs 2.28.1-9
+    Python bindings for interacting with gnome-vfs
+extra/python2-gobject 3.12.2-1
+    Python 2 bindings for GObject
+extra/python2-gobject2 2.28.6-10
+    Python 2 bindings for GObject2
+extra/python2-gtkspell 2.25.3-13
+    Python bindings for the gtkspell
+extra/python2-gtop 2.32.0-15
+    Python bindings for libgtop
+extra/python2-iwscan 20090609-5
+    A Python interface to iwlist, using the iwlib library
+extra/python2-keybinder2 0.3.0-2
+    Library for registering global keyboard shortcuts - Python 2 bindings
+extra/python2-libgnome 2.28.1-9
+    Python bindings for libgnome
+extra/python2-logilab-common 0.62.0-1
+    Useful miscellaneous modules used by Logilab projects
+extra/python2-lxml 3.3.5-1
+    Python2 binding for the libxml2 and libxslt libraries
+extra/python2-mako 1.0.0-1
+    Hyperfast and lightweight templating for the Python2 platform
+extra/python2-markupsafe 0.23-1
+    Implements a XML/HTML/XHTML Markup safe string for Python
+extra/python2-mpd 0.3.0-5
+    Python MPD client library
+extra/python2-nose 1.3.3-1
+    A discovery-based unittest extension
+extra/python2-notify 0.1.1-13
+    Python bindings for libnotify
+extra/python2-numpy 1.8.1-1
+    Scientific tools for Python
+extra/python2-opengl 3.1.0-1
+    The cross platform Python binding to OpenGL and related APIs
+extra/python2-pip 1.5.6-1 [installed]
+    An easy_install replacement for installing pypi python packages
+extra/python2-ply 3.4-4
+    Implementation of lex and yacc parsing tools
+extra/python2-pyasn1 0.1.7-2
+    ASN.1 library for Python 2
+extra/python2-pyasn1-modules 0.0.5-1
+    A collection of ASN.1-based protocols modules
+extra/python2-pycparser 2.10-4
+    C parser and AST generator written in Python
+extra/python2-pycups 1.9.66-2
+    Python CUPS Bindings
+extra/python2-pycurl 7.19.3.1-2
+    A Python 2.x interface to libcurl
+extra/python2-pygame 1.9.1-8
+    Python game library
+extra/python2-pylint 1.2.1-1
+    Analyzes Python code looking for bugs and signs of poor quality
+extra/python2-pyopenssl 0.14-3
+    Python2 wrapper module around the OpenSSL library
+extra/python2-pyqt4 4.11.1-1
+    A set of Python 2.x bindings for the Qt toolkit
+extra/python2-pyqt5 5.3.1-1
+    A set of Python 2.x bindings for the Qt5 toolkit
+extra/python2-pysmbc 1.0.14.1-2
+    Python bindings for libsmbclient
+extra/python2-pyspi 0.6.1-2
+    Python AT-SPI bindings
+extra/python2-pysqlite 2.6.3-4
+    A Python DB-API 2.0 interface for the SQLite embedded relational database engine
+extra/python2-qscintilla 2.8.3-2
+    Python 2.x bindings for QScintilla2
+extra/python2-rdflib 4.1.2-1
+    A Python library for working with RDF, a simple yet powerful language for representing information
+extra/python2-rsvg 2.32.0-15
+    Python bindings for librsvg
+extra/python2-service-identity 1.0.0-1
+    Service identity verification for pyOpenSSL
+extra/python2-setuptools 1:5.4.1-1 [installed]
+    Easily download, build, install, upgrade, and uninstall Python packages
+extra/python2-sip 4.16.2-1
+    Python 2.x SIP bindings for C and C++ libraries
+extra/python2-soappy 0.12.22-1
+    A module which implements a high-level interface to SOAP functions
+extra/python2-speechd 0.7.1-2
+    Python 2.x bindings for speechd
+extra/python2-telepathy 0.15.19-4
+    Python libraries for use in Telepathy clients and connection managers
+extra/python2-totem-plparser 2.32.0-15
+    Python bindings for totem-plparser
+extra/python2-twisted 14.0.0-1
+    Asynchronous networking framework written in Python
+extra/python2-urwid 1.2.1-1
+    Urwid is a curses-based user interface library.
+extra/python2-virtualenv 1.11.6-1
+    Virtual Python Environment builder
+extra/python2-wnck 2.32.0-15
+    Python bindings for libwnck
+extra/python2-wpactrl 20090609-5
+    A Python extension for wpa_supplicant/hostapd control interface access
+extra/python2-wstools 0.4.3-1
+    WSDL parsing services package for Web Services for Python
+extra/python2-xdg 0.25-2
+    Python library to access freedesktop.org standards
+extra/python2-zope-interface 4.1.1-1
+    Zope Interfaces for Python 2.x
+extra/pywebkitgtk 1.1.8-3
+    Python bindings to the WebKit GTK+ port
+extra/scons 2.3.2-1
+    Extensible Python-based build utility
+extra/sip 4.16.2-1
+    A tool that makes it easy to create Python bindings for C and C++ libraries
+extra/sonata 1.6.2.1-11
+    Elegant GTK+ music client for MPD
+extra/wxpython 3.0.0.0-2
+    A wxWidgets GUI toolkit for Python
+extra/wxpython2.8 2.8.12.1-1
+    A wxWidgets GUI toolkit for Python
+community/adns-python 1.2.1-6
+    python bindings for adns
+community/apache-libcloud 0.14.1-1
+    Apache Libcloud is a standard Python library that abstracts away differences among multiple cloud provider APIs
+community/bpython 0.13-1
+    Fancy interface to the Python interpreter
+community/bpython2 0.13-1
+    Fancy interface to the Python interpreter
+community/cddb-py 1.4-7
+    CDDB-Server access from Python
+community/cython 0.20.2-1
+    C-Extensions for Python
+community/cython2 0.20.2-1
+    C-Extensions for Python
+community/emacs-python-mode 6.1.3-1
+    Python mode for Emacs
+community/epydoc 3.0.1-3
+    A tool for generating API documentation for Python modules, based on their docstrings
+community/fabric 1.9.0-1
+    Python library and command-line tool designed to streamline deploying applications or performing system administration tasks via the SSH protocol
+community/flake8 1:2.2.2-1
+    The modular source code checker: pep8, pyflakes and co
+community/groovy 2.3.4-1
+    Programming language based on Java, inspired by Python, Ruby and Smalltalk
+community/gst-python 1.2.1-1
+    Python bindings for GStreamer
+community/imdbpy 5.0-1
+    Python bindings for the Internet Movie Database (IMDb)
+community/ipcheck 20140422-1
+    A simple python script to register your dynamic IP address using the NIC V2.0 protocol
+community/ipython 2.1.0-1
+    An enhanced Interactive Python shell.
+community/ipython2 2.1.0-1
+    An enhanced Interactive Python2 shell.
+community/jython 2.5.3-2
+    An implementation of the Python language written in Java
+community/libftdi 1.1-6
+    A library to talk to FTDI chips, optional python bindings.
+community/libvirt-python 1.2.5-1
+    libvirt python binding
+community/mlt-python-bindings 0.9.2-1
+    An open source multimedia framework
+community/mod_wsgi 3.5-1
+    Python WSGI adapter module for Apache
+community/mod_wsgi2 3.5-1
+    Python2 WSGI adapter module for Apache
+community/moinmoin 1.9.7-2
+    A python wiki clone
+community/nemo-python 2.2.0-1
+    Python2 binding for Nemo components
+community/newt-syrup 0.2.0-1
+    Python framework for creating text-based applications
+community/ninja-ide 2.3-2
+    Cross-platform IDE focused on Python application development
+community/nuitka 0.5.2.1-1
+    Python to native compiler
+community/pep8 1.5.7-1
+    Python style guide checker
+community/pycddb 0.1.3-7
+    CDDB-Server access from Python
+community/pychecker 0.8.19-3
+    Python code checker
+community/pydb 1.26-3
+    Pydb - Extended Python Debugger
+community/pygoocanvas 0.14.1-6
+    GooCanvas python bindings
+community/pyid3lib 0.5.1-8
+    A Python module for editing ID3v2 tags of MP3 audio files
+community/pylibacl 0.5.2-1
+    A python extension module that allows you to manipulate the POSIX.1e ACLs.
+community/pymad 0.6-5
+    Python interface to libmad.
+community/pympc 20050330-8
+    Pympc is a client for the Music Player Daemon [www.musicpd.org] written in Python
+community/pyogg 1.3-8
+    Python ogg wrapper library
+community/pypanel 2.4-8
+    A lightweight panel/taskbar for X11 window managers written in python.
+community/pyrtf 0.45-6
+    A set of Python classes that make it possible to produce RTF documents from Python programs.
+community/pysol-sound-server 3.01-9
+    A Python extension module that plays WAV samples together with MP3 or MOD background music
+community/pystatgrab 0.5-7
+    Python bindings for libstatgrab
+community/python-ansi2html 1.0.6-2
+    Convert text with ANSI color codes to HTML
+community/python-anyjson 0.3.3-6
+    Wraps the best available JSON implementation available in a common interface
+community/python-apsw 3.8.4.3-1
+    Python wrapper for SQLite
+community/python-babel 1.3-4
+    A collection of tools for internationalizing Python applications
+community/python-basemap 1.0.7-2
+    Toolkit for plotting data on map projections
+community/python-basemap-common 1.0.7-2
+    Data files for python-basemap
+community/python-beautifulsoup4 4.3.2-2
+    A Python HTML/XML parser designed for quick turnaround projects like screen-scraping
+community/python-biopython 1.64-2
+    Freely available Python tools for computational molecular biology
+community/python-bottle 0.12.7-1
+    A fast and simple micro-framework for small web-applications
+community/python-bottleneck 0.8.0-1
+    Fast NumPy array functions written in Cython
+community/python-bsddb 6.0.1-2
+    Python interface for BerkeleyDB
+community/python-cchardet 0.3.5-2
+    Universal encoding detector faster than chardet.
+community/python-cherrypy 3.3.0-1
+    A pythonic, object-oriented web development framework
+community/python-configobj 5.0.5-1
+    Simple but powerful config file reader and writer for Python
+community/python-coverage 3.7.1-3
+    A tool for measuring code coverage of Python programs
+community/python-cryptography-vectors 0.5.2-1
+    Test vectors for the cryptography package
+community/python-cssutils 1.0-2
+    A CSS Cascading Style Sheets library for Python
+community/python-cx_freeze 4.3.3-1
+    Set of utilities for freezing Python scripts into executables
+community/python-d2to1 0.2.11-2
+    Python bindings to the OpenStack Identity API (Keystone)
+community/python-dateutil 2.2-2
+    Provides powerful extensions to the standard datetime module
+community/python-decorator 3.4.0-2
+    Python Decorator module
+community/python-distutils-extra 2.38-2
+    Enhancements to the Python build system
+community/python-dnslib 0.9.0-1
+    Simple library to encode/decode DNS wire-format packets
+community/python-dnspython 1.10.0-3
+    A DNS toolkit for Python
+community/python-docopt 0.6.1-3
+    Pythonic option parser, that will make you smile
+community/python-docs 3.4.0-1
+    Set of HTML documentation for python
+community/python-docutils 0.12-1
+    Set of tools for processing plaintext docs into formats such as HTML, XML, or LaTeX
+community/python-ecdsa 0.11-2
+    Implementation of ECDSA in Python
+community/python-flask 0.10.1-5
+    Micro webdevelopment framework for Python
+community/python-gnuplot 1.8-3
+    Plot graphs with Gnuplot
+community/python-greenlet 0.4.2-3
+    Lightweight in-process concurrent programming
+community/python-gtkspellcheck 4.0.2-2
+    Spell-checking library written in Python for Gtk based on Enchant
+community/python-html5lib 0.999-4
+    A Python HTML parser/tokenizer based on the WHATWG HTML5 spec
+community/python-httplib2 0.9-2
+    Comprehensive HTTP client library, supporting many features
+community/python-httpretty 0.8.3-1
+    HTTP client mock for Python
+community/python-irc 8.9.1-1
+    IRC (Internet Relay Chat) protocol client library for Python
+community/python-iso8601 0.1.10-2
+    Simple module to parse ISO 8601 dates
+community/python-isodate 0.5.0-1
+    An ISO 8601 date/time/duration parser and formater
+community/python-itsdangerous 0.24-1
+    Various helpers to pass trusted data to untrusted environments
+community/python-jedi 0.8.0-1
+    Awesome autocompletion for python
+community/python-jinja 2.7.3-1
+    A simple pythonic template language written in Python
+community/python-jsonpatch 1.5-3
+    Python object model built on JSON schema and JSON patch
+community/python-jsonpointer 1.3-3
+    Identify specific nodes in a JSON document (RFC 6901)
+community/python-jsonschema 2.3.0-3
+    An implementation of JSON Schema validation for Python
+community/python-levenshtein 0.11.2-2
+    Python extension for computing string edit distances and similarities
+community/python-magic 5.18-2
+    Python bindings to the magic library
+community/python-markdown 2.4.1-1
+    Python implementation of John Gruber's Markdown.
+community/python-matplotlib 1.3.1-4
+    A python plotting library, making publication quality plots
+community/python-mccabe 0.2.1-5
+    McCabe complexity checker for Python
+community/python-mock 1.0.1-3
+    Mocking and Patching Library for Testing
+community/python-msgpack 0.4.2-1
+    MessagePack serializer implementation for Python
+community/python-mysql-connector 1.2.2-1
+    A standardized database driver for Python platforms and development
+community/python-networkx 1.9-1
+    Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+community/python-nltk 3.0a4-1
+    Natural language processing in Python
+community/python-numexpr 2.4-1
+    Fast numerical array expression evaluator for Python, NumPy, PyTables, pandas
+community/python-oauthlib 0.6.3-1
+    A generic, spec-compliant, thorough implementation of the OAuth request-signing logic
+community/python-openbabel 2.3.2-3
+    Python bindings for the openbabel library
+community/python-openpyxl1 1.8.6-1
+    A Python library to read/write Excel 2007 xlsx/xlsm files, 1.x branch
+community/python-oslo-config 1.3.0-4
+    parsing command line arguments and .ini style configuration files
+community/python-pandas 0.14.1-1
+    Cross-section and time series data analysis toolkit
+community/python-paramiko 1.14.0-1
+    Python module that implements the SSH2 protocol
+community/python-passlib 1.6.2-3
+    A password hashing library for Python
+community/python-patsy 0.2.1-2
+    A Python package for describing statistical models and for building design matrices
+community/python-pbr 0.8.0-1
+    Python bindings to the OpenStack Identity API (Keystone)
+community/python-pexpect 3.3-1
+    Make Python a better tool for controlling and automating other programs
+community/python-pillow 2.5.0-1
+    Python Imaging Library (PIL) fork. Python3 version.
+community/python-pmw 2.0.0-1
+    A toolkit for high-level compound widgets in Python using the Tkinter module
+community/python-pretend 1.0.8-2
+    A library for stubbing in Python
+community/python-prettytable 0.7.2-5
+    A simple Python library for easily displaying tabular data in a visually appealing ASCII table format
+community/python-progressbar 2.3-5
+    Text progressbar library for python
+community/python-psutil 2.1.1-1
+    A cross-platform process and system utilities module for Python
+community/python-psycopg2 2.5.3-1
+    A PostgreSQL database adapter for the Python programming language.
+community/python-py 1.4.20-3
+    library with cross-python path, ini-parsing, io, code, log facilities
+community/python-pybluez 0.20-2
+    Python wrapper for the BlueZ Bluetooth stack
+community/python-pyenchant 1.6.5-3
+    PyEnchant is a spellchecking library for Python3 based on the Enchant library
+community/python-pyflakes 0.8.1-1
+    A lint-like tool for Python to identify common errors quickly without executing code
+community/python-pygeoip 0.3.1-2
+    Pure Python GeoIP API
+community/python-pygit2 0.21.0-0
+    Python bindings for libgit2
+community/python-pygments 1.6-4
+    Python syntax highlighter
+community/python-pygpgme 0.3-2
+    A Python interface to the gpgme GnuPG library
+community/python-pyinotify 0.9.4-2
+    Python module used for monitoring filesystems events on Linux platforms with inotify.
+community/python-pymongo 2.7.1-1
+    Python module for using MongoDB
+community/python-pyparsing 2.0.2-1
+    General parsing module for Python
+community/python-pyproj 1.9.3-3
+    Python interfaces to PROJ.4 library
+community/python-pyquery 1.2.8-3
+    A jquery-like library for python.
+community/python-pyro 4.25-1
+    Distributed object middleware for Python (RPC)
+community/python-pyserial 2.7-4
+    Multiplatform Serial Port Module for Python
+community/python-pytables 3.1.1-1
+    A package for managing hierarchical datasets and designed to efficiently and easily cope with extremely large amounts of data
+community/python-pytest 2.5.2-3
+    Simple powerful testing with Python
+community/python-pytools 2014.3-1
+    A collection of tools for Python
+community/python-pytz 2014.4-1
+    Cross platform time zone library for Python
+community/python-pyudev 0.16.1-3
+    A pure Python 3.x binding to libudev
+community/python-pyx 0.13-3
+    Python library for the creation of PostScript and PDF files
+community/python-pyxattr 0.5.3-1
+    A python extension module that allows you to manipulate the extended attributes.
+community/python-pyzmq 14.3.1-1
+    Python3 bindings for zeromq, written in Cython
+community/python-qrencode 1.01-6
+    A simple wrapper for the C qrencode library
+community/python-redis 2.10.1-1
+    The Python interface to the Redis key-value store
+community/python-reportlab 3.1.8-1
+    A proven industry-strength PDF generating solution
+community/python-requests 2.3.0-1
+    Python HTTP for Humans.
+community/python-rsa 3.1.4-2
+    Pure-Python RSA implementation
+community/python-salsa20 0.3.0-2
+    Bindings for the NaCL implementation of Salsa20 and XSalsa20 by D. J. Bernstein
+community/python-scikit-learn 0.14.1-2
+    A set of python modules for machine learning and data mining
+community/python-scipy 0.14.0-1
+    SciPy is open-source software for mathematics, science, and engineering.
+community/python-sfml 1.3-4
+    The unofficial Python binding for SFML
+community/python-sh 1.09-3
+    Subprocess interface that allows you to call any program as if it were a function
+community/python-simplejson 3.4.0-1
+    Simple, fast, extensible JSON encoder/decoder for Python
+community/python-simplemediawiki 1.2.0_b2-2
+    Extremely low-level wrapper to the MediaWiki API
+community/python-six 1.7.3-1
+    Python 2 and 3 compatibility utilities
+community/python-slip 0.6.0-2
+    Simple Library for Python
+community/python-south 1.0-1
+    Intelligent database migrations library for the Django web framework
+community/python-sparqlwrapper 1.6.0-1
+    SPARQL Endpoint interface to Python
+community/python-sphinx 1.2.2-3
+    Python3 documentation generator
+community/python-sqlalchemy 0.9.6-1
+    Python SQL toolkit and Object Relational Mapper
+community/python-statsmodels 0.5.0-1
+    Statistical computations and models for use with SciPy
+community/python-stevedore 0.15-1
+    Manage dynamic plugins for Python applications
+community/python-sure 1.2.7-1
+    HTTP client mock for Python
+community/python-sympy 0.7.5-2
+    Symbolic manipulation package (Computer Algebra System), written in pure Python
+community/python-termcolor 1.1.0-3
+    ANSII Color formatting for output in terminal
+community/python-tornado 3.2.2-1
+    open source version of the scalable, non-blocking web server and tools
+community/python-unidecode 0.04.16-1
+    ASCII transliterations of Unicode text
+community/python-urllib3 1.9-1
+    HTTP library with thread-safe connection pooling and file post support
+community/python-virtualenv-clone 0.2.5-1
+    A script for cloning a non-relocatable virtualenv.
+community/python-virtualenvwrapper 4.3-1
+    Extensions to Ian Bicking's virtualenv tool
+community/python-werkzeug 0.9.4-2
+    Swiss Army knife of Python web development
+community/python-xlrd 0.9.3-1
+    Library for developers to extract data from Microsoft Excel (tm) spreadsheet files
+community/python-xlsxwriter 0.5.5-1
+    A Python module for creating Excel XLSX files
+community/python-yaml 3.11-1
+    Python bindings for YAML, using fast libYAML library
+community/python2-anyjson 0.3.3-6
+    Wraps the best available JSON implementation available in a common interface
+community/python2-application 1.4.0-2
+    a collection of modules that are useful when building python applications
+community/python2-apptools 4.2.1-1
+    Application tools
+community/python2-apsw 3.8.4.3-1
+    Python2 wrapper for SQLite
+community/python2-augeas 0.4.1-1
+    Pure python bindings for augeas
+community/python2-babel 1.3-4
+    A collection of tools for internationalizing Python applications
+community/python2-backports.ssl_match_hostname 3.4.0.2-1
+    The ssl.match_hostname() function from Python 3.4
+community/python2-basemap 1.0.7-2
+    Toolkit for plotting data on map projections
+community/python2-beautifulsoup3 3.2.1-3
+    A Python HTML/XML parser designed for quick turnaround projects like screen-scraping
+community/python2-beautifulsoup4 4.3.2-2
+    A Python HTML/XML parser designed for quick turnaround projects like screen-scraping
+community/python2-biopython 1.64-2
+    Freely available Python tools for computational molecular biology
+community/python2-boto 2.31.1-1
+    A Python interface to Amazon Web Services (AWS)
+community/python2-bottle 0.12.7-1
+    A fast and simple micro-framework for small web-applications
+community/python2-bottleneck 0.8.0-1
+    Fast NumPy array functions written in Cython
+community/python2-bsddb 6.0.1-2
+    Python interface for BerkeleyDB
+community/python2-caja 1.8.0-2
+    Python binding for Caja, to allow Caja property page and menu item extensions to be written in Python.
+community/python2-cchardet 0.3.5-2
+    Universal encoding detector faster than chardet.
+community/python2-cheetah 2.4.4-6
+    A Python-powered template engine and code generator
+community/python2-cherrypy 3.3.0-1
+    A pythonic, object-oriented web development framework
+community/python2-cjson 1.0.5-6
+    Fast JSON encoder/decoder for Python
+community/python2-configobj 5.0.5-1
+    Simple but powerful config file reader and writer for Python
+community/python2-coverage 3.7.1-3
+    A tool for measuring code coverage of Python programs
+community/python2-cryptography-vectors 0.5.2-1
+    Test vectors for the cryptography package
+community/python2-cssutils 1.0-2
+    A CSS Cascading Style Sheets library for Python
+community/python2-cx_freeze 4.3.3-1
+    Set of utilities for freezing Python scripts into executables
+community/python2-d2to1 0.2.11-2
+    Python bindings to the OpenStack Identity API (Keystone)
+community/python2-dateutil 2.2-2
+    Provides powerful extensions to the standard datetime module
+community/python2-decorator 3.4.0-2
+    Python Decorator module
+community/python2-distutils-extra 2.38-2
+    Enhancements to the Python build system
+community/python2-dnslib 0.9.0-1
+    Simple library to encode/decode DNS wire-format packets
+community/python2-dnspython 1.11.1-1
+    A DNS toolkit for Python
+community/python2-docopt 0.6.1-3
+    Pythonic option parser, that will make you smile
+community/python2-docs 2.7.6-1
+    Set of HTML documentation for python.
+community/python2-docutils 0.12-1
+    Set of tools for processing plaintext docs into formats such as HTML, XML, or LaTeX
+community/python2-ecdsa 0.11-2
+    Implementation of ECDSA in Python
+community/python2-enum34 0.9.23-2
+    Python 3.4 Enum backported
+community/python2-envisage 4.4.0-1
+    Extensible Application Framework
+community/python2-exiv2 0.3.2-3
+    pyexiv2 is a Python binding to exiv2, the C++ library for manipulation of EXIF, IPTC and XMP image metadata.
+community/python2-eyed3 0.7.4-1
+    A Python module and program for processing information about mp3 files
+community/python2-fastimport 0.9.3-1
+    VCS fastimport/fastexport parser
+community/python2-flake8 1:2.2.2-1
+    The modular source code checker: pep8, pyflakes and co
+community/python2-flask 0.10.1-5
+    Micro webdevelopment framework for Python
+community/python2-flickrapi 1.4.4-1
+    The official Python interface to the Flickr API
+community/python2-flup 1.0.2-5
+    A collection of Python WSGI modules
+community/python2-fonttools 2.4-2
+    Converts OpenType and TrueType fonts to and from XML
+community/python2-foolscap 0.6.4-2
+    RPC protocol for Python and Twisted
+community/python2-formencode 1.3.0a1-1
+    HTML form validation, generation, and conversion
+community/python2-fuse 0.2.1-5
+    Python bindings for FUSE
+community/python2-gasp 0.3.4-2
+    Procedural API for beginning programmers built on the PyCairo library
+community/python2-genshi 0.7-3
+    Python toolkit for stream-based generation of output for the web.
+community/python2-geotypes 0.7.0-6.1
+    A python library that implements the OpenGIS 'Simple Features Specification for SQL' Geometric Object Model
+community/python2-gevent 1.0.1-1
+    Python network library that uses greenlet and libev for easy and scalable concurrency
+community/python2-gflags 2.0-2
+    Commandline flags module for Python
+community/python2-gnupginterface 0.3.2-2
+    A Python interface to GNU Privacy Guard (GnuPG).
+community/python2-gnuplot 1.8-3
+    Plot graphs with Gnuplot
+community/python2-gnutls 1.2.5-4
+    Python wrapper for the GNUTLS library
+community/python2-greenlet 0.4.2-3
+    Lightweight in-process concurrent programming
+community/python2-grequests 0.2.0-2
+    Allows you to use Requests with Gevent to make asyncronous HTTP Requests easily.
+community/python2-gtkspellcheck 4.0.2-2
+    Spell-checking library written in Python for Gtk based on Enchant
+community/python2-html5lib 0.999-4
+    A Python2 HTML parser/tokenizer based on the WHATWG HTML5 spec
+community/python2-httplib2 0.9-2 [installed]
+    Comprehensive HTTP client library, supporting many features
+community/python2-httpretty 0.8.3-1
+    HTTP client mock for Python
+community/python2-iniparse 0.4-4
+    Better INI parser library for Python
+community/python2-ipaddr 2.1.11-1
+    An IPv4/IPv6 manipulation library in Python
+community/python2-ipy 0.81-1
+    Python class and tools for handling of IPv4 and IPv6 addresses and networks.
+community/python2-irc 8.9.1-1
+    IRC (Internet Relay Chat) protocol client library for Python
+community/python2-iso8601 0.1.10-2
+    Simple module to parse ISO 8601 dates
+community/python2-isodate 0.5.0-1
+    An ISO 8601 date/time/duration parser and formater
+community/python2-itsdangerous 0.24-1
+    Various helpers to pass trusted data to untrusted environments
+community/python2-jedi 0.8.0-1
+    Awesome autocompletion for python2
+community/python2-jinja 2.7.3-1
+    A simple pythonic template language written in Python
+community/python2-jsonpatch 1.5-3
+    Python object model built on JSON schema and JSON patch
+community/python2-jsonpointer 1.3-3
+    Identify specific nodes in a JSON document (RFC 6901)
+community/python2-jsonschema 2.3.0-3
+    An implementation of JSON Schema validation for Python
+community/python2-lcms 1.19-5
+    LittleCMS Python bindings
+community/python2-ldap 2.4.15-1
+    Provides an object-oriented API to access LDAP directory servers from Python programs
+community/python2-levenshtein 0.11.2-2
+    Python extension for computing string edit distances and similarities
+community/python2-lockfile 0.9.1-1
+    Platform-independent file locking module
+community/python2-m2crypto 0.22.3-1
+    A crypto and SSL toolkit for Python
+community/python2-magic 5.18-2
+    Python bindings to the magic library
+community/python2-marisa 0.2.4-4
+    Python 2.x language binding for marisa
+community/python2-markdown 2.4.1-1
+    Python implementation of John Gruber's Markdown.
+community/python2-matplotlib 1.3.1-4
+    A python plotting library, making publication quality plots
+community/python2-mccabe 0.2.1-5
+    McCabe complexity checker for Python
+community/python2-mechanize 0.2.5-3
+    Stateful programmatic web browsing in Python
+community/python2-meld3 1.0.0-1
+    An HTML/XML templating engine
+community/python2-memcached 1.53-2
+    Python interface to memcached
+community/python2-migrate 0.7.2-6
+    provides a way to deal with database schema changes in SQLAlchemy projects
+community/python2-mock 1.0.1-3
+    Mocking and Patching Library for Testing
+community/python2-mpdclient2 1.0-5
+    Python module for interfacing MPD
+community/python2-msgpack 0.4.2-1
+    MessagePack serializer implementation for Python2
+community/python2-munkres 1.0.5.4-3
+    Munkres algorithm for the assignment problem
+community/python2-musicbrainz2 0.7.4-3
+    A client library written in python which provides easy object oriented access to the MusicBrainz database
+community/python2-musicbrainzngs 0.5-2
+    Bindings for the MusicBrainz NGS service
+community/python2-mysql-connector 1.2.2-1
+    A standardized database driver for Python platforms and development
+community/python2-mysql2pgsql 0.1.5-2
+    Tool for migrating/converting from mysql to postgresql
+community/python2-nautilus 1.1-4
+    Python bindings for the Nautilus Extension API
+community/python2-ndg-httpsclient 0.3.2-2
+    Provides enhanced HTTPS support for httplib and urllib2 using PyOpenSSL
+community/python2-netifaces 0.10.4-1
+    Portable module to access network interface information in Python
+community/python2-networkx 1.9-1
+    Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+community/python2-nltk 3.0a4-1
+    Natural language processing in Python
+community/python2-numarray 1.5.2-7
+    Provides array manipulation and computational capabilities.
+community/python2-numexpr 2.4-1
+    Fast numerical array expression evaluator for Python, NumPy, PyTables, pandas
+community/python2-oauth 1.0.1-3
+    An open protocol to allow API authentication from desktop and web applications.
+community/python2-oauthlib 0.6.3-1
+    A generic, spec-compliant, thorough implementation of the OAuth request-signing logic
+community/python2-openbabel 2.3.2-3
+    Python bindings for the openbabel library
+community/python2-openid 2.2.5-4
+    OpenID library for Python
+community/python2-openpyxl1 1.8.6-1
+    A Python library to read/write Excel 2007 xlsx/xlsm files, 1.x branch
+community/python2-oslo-config 1.3.0-4
+    parsing command line arguments and .ini style configuration files
+community/python2-packagekit 0.7.6-11
+    Python bindings for PackageKit
+community/python2-pacparser 1.3.1-1
+    Python 2.x pacparser module
+community/python2-pam 0.1.4-2
+    Module that provides an authenticate function that allows the caller to authenticate a given username / password against the PAM system on Linux.
+community/python2-pandas 0.14.1-1
+    Cross-section and time series data analysis toolkit
+community/python2-paramiko 1.14.0-1
+    Python module that implements the SSH2 protocol
+community/python2-passlib 1.6.2-3
+    A password hashing library for Python
+community/python2-paste 1.7.5.1-4
+    Tools for using a Web Server Gateway Interface stack.
+community/python2-patsy 0.2.1-2
+    A Python package for describing statistical models and for building design matrices
+community/python2-pbkdf2 1.3-1
+    A module that implements the password-based key derivation function PBKDF2.
+community/python2-pbr 0.8.0-1
+    Python bindings to the OpenStack Identity API (Keystone)
+community/python2-pdfrw 0.1-3
+    Basic PDF file manipulation library
+community/python2-pep8 1.5.7-1
+    Python style guide checker
+community/python2-pexpect 3.3-1
+    Make Python a better tool for controlling and automating other programs
+community/python2-pillow 2.5.0-1
+    Python Imaging Library (PIL) fork. Python2 version.
+community/python2-pmw 2.0.0-1
+    A toolkit for high-level compound widgets in Python using the Tkinter module
+community/python2-polib 1.0.4-1
+    A library to manipulate gettext files
+community/python2-poppler 0.12.1-8
+    Python 2.x bindings for Poppler
+community/python2-poster 0.8.1-3
+    A set of classes and functions to faciliate making HTTP POST (or PUT) requests using the standard multipart/form-data encoding in Python with urllib2
+community/python2-pretend 1.0.8-2
+    A library for stubbing in Python
+community/python2-prettytable 0.7.2-5
+    A simple Python library for easily displaying tabular data in a visually appealing ASCII table format
+community/python2-progressbar 2.3-5
+    Text progressbar library for python2
+community/python2-protobuf 2.5.0-4
+    protobuf python API
+community/python2-psutil 2.1.1-1
+    A cross-platform process and system utilities module for Python2
+community/python2-psycopg1 1.1.21-9
+    A PostgreSQL database adapter for Python
+community/python2-psycopg2 2.5.3-1
+    A PostgreSQL database adapter for the Python programming language.
+community/python2-py 1.4.20-3
+    library with cross-python path, ini-parsing, io, code, log facilities
+community/python2-pyacoustid 1.0.0-3
+    Bindings for Chromaprint acoustic fingerprinting and the Acoustid API
+community/python2-pybluez 0.20-2
+    Python wrapper for the BlueZ Bluetooth stack
+community/python2-pybonjour 1.1.1-4
+    Pure-Python interface to Apple Bonjour and compatible DNS-SD libraries
+community/python2-pybox2d 370-1
+    Python wrapper for Box2D
+community/python2-pycdio 0.20-2
+    Python OO interface to libcdio (CD Input and Control library)
+community/python2-pychart 1.39-8
+    Python library for creating Encapsulated Postscript, PDF, PNG, or SVG charts.
+community/python2-pychm 0.8.4-2
+    Python bindings for chmlib
+community/python2-pycountry 1.5-1
+    ISO country, subdivision, language, currency and script definitions and their translations
+community/python2-pydot 1.0.28-3
+    Python interface to Graphviz's Dot language
+community/python2-pyenchant 1.6.5-3
+    PyEnchant is a spellchecking library for Python2 based on the Enchant library
+community/python2-pyface 4.4.0-2
+    Traits-capable windowing framework
+community/python2-pyflakes 0.8.1-1
+    A lint-like tool for Python to identify common errors quickly without executing code
+community/python2-pygeoip 0.3.1-2
+    Pure Python GeoIP API
+community/python2-pygit2 0.21.0-0
+    Python bindings for libgit2
+community/python2-pyglet 1.1.4-2
+    A cross-platform windowing and multimedia library for Python
+community/python2-pygments 1.6-4
+    Python syntax highlighter
+community/python2-pygpgme 0.3-2
+    A Python interface to the gpgme GnuPG library
+community/python2-pyinotify 0.9.4-2
+    Python module used for monitoring filesystems events on Linux platforms with inotify.
+community/python2-pylast 0.5.11-4
+    A Python interface to the last.fm API
+community/python2-pylorcon 2-4
+    Wrapper for the LORCON (Loss Of Radio CONnectivity) library
+community/python2-pymongo 2.7.1-1
+    Python module for using MongoDB
+community/python2-pyparsing 2.0.2-1
+    General parsing module for Python
+community/python2-pyproj 1.9.3-3
+    Python interfaces to PROJ.4 library
+community/python2-pyquery 1.2.8-3
+    A jquery-like library for python.
+community/python2-pyro 4.25-1
+    Distributed object middleware for Python (RPC)
+community/python2-pyserial 2.7-4
+    Multiplatform Serial Port Module for Python
+community/python2-pysqlite-legacy 1.0.1-3
+    Python DB-API 2.0 interface for the legacy SQLite 2
+community/python2-pyswip 0.2.3-2
+    Python wrapper for SWI-Prolog
+community/python2-pytables 3.1.1-1
+    A package for managing hierarchical datasets and designed to efficiently and easily cope with extremely large amounts of data
+community/python2-pytest 2.5.2-3
+    Simple powerful testing with Python
+community/python2-pytools 2014.3-1
+    A collection of tools for Python
+community/python2-pytz 2014.4-1
+    Cross platform time zone library for Python
+community/python2-pyudev 0.16.1-3
+    A pure Python 2.x binding to libudev
+community/python2-pyx 0.12.1-2
+    Python library for the creation of PostScript and PDF files
+community/python2-pyxattr 0.5.3-1
+    A python extension module that allows you to manipulate the extended attributes.
+community/python2-pyxmpp 1.1.2-4
+    Python XMPP and Jabber implementation based on libxml2
+community/python2-pyzmq 14.3.1-1
+    Python2 bindings for zeromq, written in Cython
+community/python2-qrencode 1.01-5
+    A simple wrapper for the C qrencode library
+community/python2-redis 2.10.1-1
+    The Python interface to the Redis key-value store
+community/python2-reportlab 3.1.8-1
+    A proven industry-strength PDF generating solution
+community/python2-requests 2.3.0-1
+    Python HTTP for Humans.
+community/python2-rope 0.9.4-2
+    Python refactoring library
+community/python2-rsa 3.1.4-2
+    Pure-Python RSA implementation
+community/python2-rst2pdf 0.93-6
+    Create PDFs from simple text markup, no LaTeX required
+community/python2-salsa20 0.3.0-2
+    Bindings for the NaCL implementation of Salsa20 and XSalsa20 by D. J. Bernstein
+community/python2-scikit-learn 0.14.1-2
+    A set of python modules for machine learning and data mining
+community/python2-scipy 0.14.0-1
+    SciPy is open-source software for mathematics, science, and engineering.
+community/python2-sensors 0.0.2-2
+    Python bindings to libsensors
+community/python2-sh 1.09-3
+    Subprocess interface that allows you to call any program as if it were a function
+community/python2-simplejson 3.4.0-1
+    Simple, fast, extensible JSON encoder/decoder for Python
+community/python2-six 1.7.3-1
+    Python 2 and 3 compatibility utilities
+community/python2-slowaes 0.1a1-2
+    Implementation of AES in Python
+community/python2-south 1.0-1
+    Intelligent database migrations library for the Django web framework
+community/python2-sparqlwrapper 1.6.0-1
+    SPARQL Endpoint interface to Python
+community/python2-sphinx 1.2.2-3
+    Python2 documentation generator
+community/python2-sqlalchemy 0.9.6-1
+    Python 2 SQL toolkit and Object Relational Mapper
+community/python2-sqlobject 1.5.1-1
+    Provides an object interface to SQL databases
+community/python2-statsmodels 0.5.0-1
+    Statistical computations and models for use with SciPy
+community/python2-stevedore 0.15-1
+    Manage dynamic plugins for Python applications
+community/python2-suds 0.4-4
+    A lightweight SOAP python client
+community/python2-sure 1.2.7-1
+    HTTP client mock for Python
+community/python2-sympy 0.7.5-2
+    Symbolic manipulation package (Computer Algebra System), written in pure Python
+community/python2-systemd 214-1
+    Python2 bindings for systemd
+community/python2-tagpy 2013.1-1
+    Python bindings for TagLib
+community/python2-tempita 0.5.2-1
+    A lightweight unicode templating language
+community/python2-termcolor 1.1.0-3
+    ANSII Color formatting for output in terminal
+community/python2-tornado 3.2.2-1
+    open source version of the scalable, non-blocking web server and tools
+community/python2-traits 4.5.0-1
+    Explicitly typed attributes for Python
+community/python2-traitsui 4.4.0-1
+    Traits-capable user interfaces
+community/python2-unidecode 0.04.16-1
+    ASCII transliterations of Unicode text
+community/python2-urllib3 1.9-1
+    HTTP library with thread-safe connection pooling and file post support
+community/python2-virtualenv-clone 0.2.5-1
+    A script for cloning a non-relocatable virtualenv.
+community/python2-vobject 0.8.1c-4
+    Python library for parsing and generating vCard and vCalendar files
+community/python2-vorbissimple 0.0.2-7
+    Python bindings for vorbissimple
+community/python2-webpy 0.37-5
+    Simple but powerful web framework for python
+community/python2-werkzeug 0.9.4-2
+    Swiss Army knife of Python web development
+community/python2-xapian 1:1.2.18-1
+    Python bindings for Xapian
+community/python2-xlib 0.15rc1-7
+    A fully functional X client library for Python programs
+community/python2-xlrd 0.9.3-1
+    Library for developers to extract data from Microsoft Excel (tm) spreadsheet files
+community/python2-xlsxwriter 0.5.5-1
+    A Python module for creating Excel XLSX files
+community/python2-xlwt 0.7.5-1
+    Library to create spreadsheet files compatible with MS Excel 97/2000/XP/2003 XLS files
+community/python2-yaml 3.11-1
+    Python bindings for YAML, using fast libYAML library
+community/pyvorbis 1.4-7
+    Python vorbis wrapper library
+community/re2 20140304-1
+    C++ library for fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python
+community/scapy 2.2.0-9
+    A powerful interactive packet manipulation program written in Python
+community/shedskin 0.9.4-1
+    Python to C++ compiler
+community/sk1libs 0.9.2-2
+    A set of python non-GUI extensions for sK1 Project.
+community/sk1sdk 0.9.1-1
+    A set of python non-GUI extensions for sK1 Project.
+community/transmageddon 1.1-1
+    Simple python application for transcoding video into formats supported by GStreamer
+community/urlgrabber 3.10.1-2
+    A high-level cross-protocol url-grabber and Python library
+community/uwsgi-plugin-python 2.0.4-1
+    Plugin for Python support
+community/uwsgi-plugin-python2 2.0.4-1
+    Plugin for Python2 support
+community/vim-jedi 0.7.0-4 (vim-plugins)
+    Vim plugin for jedi, an awesome Python autocompletion.
+community/waf 1.7.16-1
+    General-purpose build system modelled after Scons
+community/wammu 0.36-4
+    A wxPython-based GUI for Gammu
+community/whaawmp 0.2.14-2
+    GTK+ media player written in python and using GStreamer
+community/xmldiff 0.6.10-3
+    A python tool that figures out the differences between two similar XML files, in the same way the diff utility does it
+community/xmpppy 0.5.0_rc1-3
+    A Python library to provide easy scripting with Jabber
+alarm/python-dateutil-2.1 2.1-8
+    Provides powerful extensions to the standard datetime module
+alarm/python2-ansi2html 0.9.4-1
+    Convert text with ANSI color codes to HTML
+alarm/python2-dateutil-2.1 2.1-8
+    Provides powerful extensions to the standard datetime module
+alarm/python2-msgpack-pure 0.1.3-1
+    Python module for MessagePack serialization/deserialization library
+aur/python-configshell-fb 1.1.fb13-1
+    python framework for building simple CLI applications (free branch)
+aur/python-pylast 0.5.11-5
+    A Python interface to the last.fm API
+aur/python-rtslib-fb 2.1.fb48-1
+    free branch version of the LIO target API
+aur/python-sqlalchemy-0.7.9 0.7.9-4
+    Python SQL toolkit and Object Relational Mapper
+aur/python2-certifi 1.0.1-1
+    Mozilla's SSL Certs
+aur/python2-plumbum 1.4.2-1
+    Shell combinators library.
+aur/python2-pynzb 0.1.0-2
+    A unified API for parsing NZB files
+aur/python2-pyrss2gen 1.1-2
+    A Python library for generating RSS 2.0 feeds.
+aur/python2-rpyc 3.3.0-1
+    Remote Python Call (RPyC), a transparent and symmetric RPC library
+aur/python2-simpleparse 2.1.1a2-1
+    A simple and fast parser generator
+aur/python2-sqlalchemy-0.7.9 0.7.9-4
+    Python 2 SQL toolkit and Object Relational Mapper
+aur/python2-tmdb3 0.6.17-1
+    TheMovieDB.org APIv3 interface
+aur/python2-transmissionrpc 0.11-1
+    Module to communicate with Transmission BT client via JSON-RPC
+aur/python2-tvrage 0.3.0-1
+    Object oriented client interface for tvrage.com's XML based api feeds
+aur/python2-yenc 0.4.0-3
+    yEnc encoding/decoding module for python2
