@@ -6,3 +6,5 @@ build/
 dist/
 carplayer.database
 carplayer.favourites
+Adafruit_CharLCD.pyc
+LCD_FAKE.pyc
