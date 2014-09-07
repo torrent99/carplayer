@@ -18,7 +18,7 @@ from obd_utils import scanSerial
 
 current_milli_time = lambda: int(round(time.time() * 1000))
 
-FAKEIT = 1
+FAKEIT = 0
 FAKEIT_line = 0
 OLD_VERSION = 0
 NUM_TRIPS = 3
@@ -128,8 +128,8 @@ class MPG_Params():
                 self.this_run_duration = 0
                 self.params_save_count = 1
                 self.lasttank = tank()
-                self.params.fuel_adjust = float(1)
-                self.params.speed_adjust = float(1)
+                self.fuel_adjust = float(1)
+                self.speed_adjust = float(1)
     	        for i in range(0,(NUM_TRIPS +1)):
                     trip = MPG_trip()
                     self.trips[i] =  trip
@@ -155,11 +155,15 @@ class MPG_Params():
 
         def  load_params(self):
                 try:
+                      print "Trying to load the RAMCACHE params file\n"
 		      self.actual_load_params(TEMP_PARAMS_FILE)
+                      print "Successfully loaded the RAMCACHE params file\n"
                 except:
                       try:
+                          print "Didn't find the RAMCACHE params file, so loading the perm version\n"
 		          self.actual_load_params(PERM_PARAMS_FILE)
                       except:
+                          print "Didn't find the PERM params file, so saving a FRESH version\n"
                           self.actual_save_params(PERM_PARAMS_FILE)
 
         def  save_params(self):

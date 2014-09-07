@@ -20,7 +20,7 @@
 
 '''NCMPY - a [Python + Curses]-based MPD client.'''
 
-FAKEIT = 1
+FAKEIT = 0
 
 if FAKEIT == 0:
 	from Adafruit_CharLCD import Adafruit_CharLCD
@@ -81,6 +81,13 @@ lcd.begin(16,2)
 lcd.clear()
 lcd.message("Carplayer\nStarting up...")
 ##global_dir_index=1
+
+def isnumber(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
 
 def format_number_2_dec_points( num):
             if (type(num) is int) or (type(num) is float) or (type(num) is long):
@@ -2450,7 +2457,6 @@ class NCMPY():
             lcd.message("Reset TRIP #:\nthen press enter")
             tripnumber = self.e.getstr('Trip Number to Reset')
             lcd.clear()
-            self.update_lcd_info = 1
             if isnumber(tripnumber):
                 tripnum = int(tripnumber)
                 if tripnum >=0 and tripnum < MPG_NUM_TRIPS:
@@ -2461,6 +2467,7 @@ class NCMPY():
                     open((RESET_TRIP_FILE+str(tripnum)), 'a').close()
                     lcd.clear()
                     self.update_lcd_info = 1
+            self.update_lcd_info = 1
         elif c == curses.KEY_IC:
             # MPG Refuel
             self.update_lcd_info = 0
