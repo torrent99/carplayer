@@ -12,26 +12,35 @@ import os
 import os.path
 import random
 import csv
+import sys
 #from datetime import timedelta
  
 from obd_utils import scanSerial
 
 current_milli_time = lambda: int(round(time.time() * 1000))
+scriptpath = "../FAKEIT.py"
 
-FAKEIT = 0
+# Add the directory containing your module to the Python path (wants absolute paths)
+sys.path.append(os.path.abspath(scriptpath))
+
+# Do the import
+import FAKEIT
+FAKEIT = FAKEIT.set_fakeit()
+
 FAKEIT_line = 0
 OLD_VERSION = 0
 NUM_TRIPS = 3
 FUELUP_TRIP = NUM_TRIPS + 1
 if FAKEIT == 1:
-    PERM_PARAMS_FILE = "./perm_params.txt"
-    TEMP_PARAMS_FILE = "./temp_params.txt"
-    RESET_TRIP_FILE = "./RESET_TRIP"
-    RESET_CURRENT_FILE = "./RESET_CURRENT"
-    FUELUP_COM_FILE = "./FUELUP_COM_FILE"
-    FUELUP_DATA_FILE_OUT = "./FUELUP_DATA_FILE_OUT"
-    FUELUP_DATA_FILE_IN = "./FUELUP_DATA_FILE_IN"
-    FUELUPS_DATABASE = "./FUELUP_DATABASE_FILE"
+    PERM_PARAMS_FILE = "/tmp/perm_params.txt"
+    TEMP_PARAMS_FILE = "/tmp/temp_params.txt"
+    RESET_TRIP_FILE = "/tmp/RESET_TRIP"
+    RESET_CURRENT_FILE = "/tmp/RESET_CURRENT"
+    FUELUP_COM_FILE = "/tmp/FUELUP_COM_FILE"
+    FUELUP_DATA_FILE_OUT = "/tmp/FUELUP_DATA_FILE_OUT"
+    FUELUP_DATA_FILE_IN = "/tmp/FUELUP_DATA_FILE_IN"
+    FUELUPS_DATABASE = "/tmp/FUELUP_DATABASE_FILE"
+    DISPLAY_READY_FILE = "/tmp/MPG_DISPLAY_READY"
 else:
     PERM_PARAMS_FILE = "/mnt/music/stick2/mpg_params.txt"
     TEMP_PARAMS_FILE = "/ramcache/mpg_params.txt"
@@ -41,6 +50,7 @@ else:
     FUELUPS_DATABASE = "/mnt/music/stick2/FUELUP_DATABASE_FILE"
     FUELUP_DATA_FILE_OUT = "/ramcache/FUELUP_DATA_FILE_OUT"
     FUELUP_DATA_FILE_IN = "/ramcache/FUELUP_DATA_FILE_IN"
+    DISPLAY_READY_FILE = "/ramcache/MPG_DISPLAY_READY"
 PARAMS_SAVE_INTERVAL = 10
  
 class tank():
@@ -68,6 +78,14 @@ class MPG_fuelup_data():
 		self.carplayer_fuelup_distance_miles = float(0)
 		self.carplayer_fuelup_fuel_l = float(0 )
 		self.carplayer_fuelup_fuel_cost = float(0 )
+
+       def copy(self,temp_params):
+		self.mpg_fuelup_distance_miles = temp_params.mpg_fuelup_distance_miles  
+		self.mpg_fuelup_fuel_l = temp_params.mpg_fuelup_fuel_l  
+		self.mpg_fuelup_fuel_cost = temp_params.mpg_fuelup_fuel_cost  
+		self.carplayer_fuelup_distance_miles = temp_params.carplayer_fuelup_distance_miles  
+		self.carplayer_fuelup_fuel_l = temp_params.carplayer_fuelup_fuel_l  
+		self.carplayer_fuelup_fuel_cost = temp_params.carplayer_fuelup_fuel_cost  
 
        def  save_fuelup(self):
                 try:
@@ -135,6 +153,21 @@ class MPG_Params():
                     self.trips[i] =  trip
                     #self.trips.append ( trip)
 
+        def copy(self,temp_params):
+		self.this_run_distance_cm = temp_params.this_run_distance_cm 
+		self.this_run_fuel_ml = temp_params.this_run_fuel_ml
+		self.this_run_distance_DFCO_cm = temp_params.this_run_distance_DFCO_cm  
+		self.fuel_price =  temp_params.fuel_price 
+	        self.instant_mpg_from_dist =  temp_params.instant_mpg_from_dist 
+                self.previous_rpm_value =  temp_params.previous_rpm_value 
+                self.this_run_MPG =  temp_params.this_run_MPG
+                self.this_run_duration =  temp_params.this_run_duration 
+                self.params_save_count =  temp_params.params_save_count 
+                self.lasttank = temp_params.lasttank 
+                self.fuel_adjust = temp_params.speed_adjust  
+    	        for i in range(0,(NUM_TRIPS +1)):
+                    self.trips[i] =  temp_params.trips[i] 
+
 	def reset_current(self):
 		self.this_run_distance_cm = float(0)
 		self.this_run_fuel_ml = float(0 )
@@ -148,20 +181,22 @@ class MPG_Params():
         	pickle.dump(self,params_file)
         	params_file.close()
 
-        def  actual_load_params(self,filename):
+        def  actual_load_params(self,filename,temp_params):
 		params_file = open(filename,"r")
-        	self = pickle.load(params_file)
+        	temp_params = pickle.load(params_file)
+                self.copy(temp_params)
         	params_file.close()
 
-        def  load_params(self):
+        def  load_params(self,temp_params):
                 try:
                       print "Trying to load the RAMCACHE params file\n"
-		      self.actual_load_params(TEMP_PARAMS_FILE)
+		      self.actual_load_params(TEMP_PARAMS_FILE,temp_params)
+                      print self.this_run_fuel_ml
                       print "Successfully loaded the RAMCACHE params file\n"
                 except:
                       try:
                           print "Didn't find the RAMCACHE params file, so loading the perm version\n"
-		          self.actual_load_params(PERM_PARAMS_FILE)
+		          self.actual_load_params(PERM_PARAMS_FILE,temp_params)
                       except:
                           print "Didn't find the PERM params file, so saving a FRESH version\n"
                           self.actual_save_params(PERM_PARAMS_FILE)
@@ -197,7 +232,8 @@ class OBD_Capture():
         self.fuel_cons = [0] * self.NBSMOOTH
         self.dist_travelled = [0] * self.NBSMOOTH
         self.params = MPG_Params()
-        self.params.load_params()
+        temp_params = MPG_Params()
+        self.params.load_params(temp_params)
         self.FAKEIT_line = 0
         self.smooth_maf = float(0)
         self.smooth_vss = float(0)
@@ -260,10 +296,14 @@ class OBD_Capture():
     	for i in range(0,NUM_TRIPS):
 		if os.path.isfile(RESET_TRIP_FILE+str(i)):
                         print "Resetting TRIP "+str(i)
+                        self.mpgfile_message("RESETTING\n","TRIP:"+str(i)+"\n")
+                        time.sleep(1)
 			self.params.trips[i].reset()
                         os.remove(RESET_TRIP_FILE+str(i))
 	if os.path.isfile(RESET_CURRENT_FILE):
                 print "Resetting CURRENT "
+                self.mpgfile_message("RESETTING\n","CURRENT TRIP\n")
+                time.sleep(1)
 		self.params.reset_current()
                 os.remove(RESET_CURRENT_FILE)
 	if os.path.isfile(FUELUP_COM_FILE ):
@@ -331,6 +371,8 @@ class OBD_Capture():
 
 
     def mpgfile_message(self, line1, line2):
+            print "line1 = "+str(line1)+ ":\n"
+            print "line2 = "+str(line2)+ ":\n"
             fo = open("/ramcache/MPG.TXT","w+")
             if (line1 == "") and (line2 == ""):
                 self.print_screen1(fo)
@@ -350,6 +392,8 @@ class OBD_Capture():
 		fo.write(str("Trip "+str(i)+" Fuel cost:"+str(self.params.trips[i].trip_fuel_cost)+"\n"))
         #try:
             fo.close()
+            open(DISPLAY_READY_FILE , 'a').close()
+
         #except:
             return 0
 

@@ -55,6 +55,7 @@ class Adafruit_CharLCD:
 
 
     def __init__(self, pin_rs=25, pin_e=24, pins_db=[23, 17, 21, 22], GPIO = None):
+         self.LCDfile = open("/tmp/FAKE_LCD.txt","w")
          something = 0
 
     def begin(self, cols, lines):
@@ -178,7 +179,8 @@ class Adafruit_CharLCD:
 
 
     def message(self, text):
-        print "LCD MESSAGE:"+str(text)+"\n"
+        self.LCDfile.write( "LCD MESSAGE:"+str(text)+"\n")
+        self.LCDfile.flush()
         return 0
         """ Send string to LCD. Newline wraps to second line"""
 

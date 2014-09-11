@@ -20,7 +20,18 @@
 
 '''NCMPY - a [Python + Curses]-based MPD client.'''
 
-FAKEIT = 0
+import sys
+import os
+scriptpath = "pyobd/FAKEIT.py"
+
+# Add the directory containing your module to the Python path (wants absolute paths)
+sys.path.append(os.path.abspath(scriptpath))
+
+# Do the import
+import FAKEIT
+FAKEIT = FAKEIT.set_fakeit()
+
+
 
 if FAKEIT == 0:
 	from Adafruit_CharLCD import Adafruit_CharLCD
@@ -52,14 +63,17 @@ from ncmpymodule import lrc, ttplyrics
 FAKEIT_line = 0
 MPG_NUM_TRIPS = 3
 if FAKEIT == 1:
-    PERM_PARAMS_FILE = "./perm_params.txt"
-    TEMP_PARAMS_FILE = "./temp_params.txt"
-    RESET_TRIP_FILE = "./RESET_TRIP"
-    RESET_CURRENT_FILE = "./RESET_CURRENT"
-    FUELUP_COM_FILE = "./FUELUP_COM_FILE"
-    FUELUP_DATA_FILE_OUT = "./FUELUP_DATA_FILE_OUT"
-    FUELUP_DATA_FILE_IN = "./FUELUP_DATA_FILE_IN"
-    FUELUPS_DATABASE = "./FUELUP_DATABASE_FILE"
+    PERM_PARAMS_FILE = "/tmp/perm_params.txt"
+    TEMP_PARAMS_FILE = "/tmp/temp_params.txt"
+    RESET_TRIP_FILE = "/tmp/RESET_TRIP"
+    RESET_CURRENT_FILE = "/tmp/RESET_CURRENT"
+    FUELUP_COM_FILE = "/tmp/FUELUP_COM_FILE"
+    FUELUP_DATA_FILE_OUT = "/tmp/FUELUP_DATA_FILE_OUT"
+    FUELUP_DATA_FILE_IN = "/tmp/FUELUP_DATA_FILE_IN"
+    FUELUPS_DATABASE = "/tmp/FUELUP_DATABASE_FILE"
+    DISPLAY_READY_FILE = "/tmp/MPG_DISPLAY_READY"
+    CARPLAYER_DATABASE = "./carplayer_database.fake"
+    CARPLAYER_FAVOURITES = "./carplayer.favourites.fake"
 else:
     PERM_PARAMS_FILE = "/mnt/music/stick2/mpg_params.txt"
     TEMP_PARAMS_FILE = "/ramcache/mpg_params.txt"
@@ -69,6 +83,9 @@ else:
     FUELUPS_DATABASE = "/mnt/music/stick2/FUELUP_DATABASE_FILE"
     FUELUP_DATA_FILE_OUT = "/ramcache/FUELUP_DATA_FILE_OUT"
     FUELUP_DATA_FILE_IN = "/ramcache/FUELUP_DATA_FILE_IN"
+    DISPLAY_READY_FILE = "/ramcache/MPG_DISPLAY_READY"
+    CARPLAYER_DATABASE = "./carplayer.database"
+    CARPLAYER_FAVOURITES = "./carplayer.favourites"
 
 
 # Where conf files lie. Order IS important.
@@ -107,7 +124,7 @@ def read_conf():
     if FAKEIT == 0:
     	conf['MPD_HOST'] = 'localhost'
     else:
-    	conf['MPD_HOST'] = '192.168.2.26'
+    	conf['MPD_HOST'] = 'localhost'
 
     conf['MPD_PORT'] = 6600
     conf['ENABLE_OSD'] = False
@@ -600,25 +617,28 @@ class NCMPY_STATUS(NCMPY_MOD):
 
             if self.display_mode == 3:   # MPG Display mode screen
                 try:
-                    with open("/ramcache/MPG.TXT","r") as f:
-                        content = f.readlines()
-                    f.close()
-                    if len(content) >0:
-                    	topline = content[0 + (2 * self.mpg_screen )]
-                        if len(content) >1:
-                    		bottomline = content[1 + (2 * self.mpg_screen )]
-			else:
-				bottomline = "Eh?"
-		    else:
-			topline ="Still waiting"
-                    	bottomline = "Testing123"
+        	    if os.path.isfile(DISPLAY_READY_FILE ):
 
-                    #topline = "Testing"
-                    #bottomline = "Testing123"
-                    lcd.setCursor(0,0)
-                    lcd.message((topline.center(16))[0:15])
-                    lcd.setCursor(0,1)
-                    lcd.message((bottomline.center(16))[0:15])
+                    	with open("/ramcache/MPG.TXT","r") as f:
+                        	content = f.readlines()
+                    	f.close()
+                    	if len(content) >0:
+                    		topline = content[0 + (2 * self.mpg_screen )]
+                        	if len(content) >1:
+                    			bottomline = content[1 + (2 * self.mpg_screen )]
+				else:
+					bottomline = "Eh?"
+		    	else:
+				topline ="Still waiting"
+                    		bottomline = "Testing123"
+
+                    	#topline = "Testing"
+                    	#bottomline = "Testing123"
+                    	lcd.setCursor(0,0)
+                    	lcd.message((topline.center(16))[0:15])
+                    	lcd.setCursor(0,1)
+                    	lcd.message((bottomline.center(16))[0:15])
+        	    	os.remove(DISPLAY_READY_FILE )
                     
                 except:
                     return 0
@@ -1017,13 +1037,13 @@ class NCMPY_DATABASE(NCMPY_MOD, NCMPY_SCROLL):
 
     def save_fav_database(self):
         self.copy_favs_to_fav_database()
-        favourites_file = open('carplayer.favourites',"w")
+        favourites_file = open(CARPLAYER_FAVOURITES,"w")
         pickle.dump(self.favourites_database,favourites_file)
         favourites_file.close()
 
     def load_fav_database(self):
         try:
-           favourites_file = open('carplayer.favourites')
+           favourites_file = open(CARPLAYER_FAVOURITES)
            self.favourites_database = pickle.load(favourites_file)
            favourites_file.close()
            self.copy_favs_to_main_database()
@@ -1041,7 +1061,7 @@ class NCMPY_DATABASE(NCMPY_MOD, NCMPY_SCROLL):
                   self.favourites_database.append([index,"stick1/Music/Alphaville/Forever_Young"])
                   self.directory_database.append([index,"stick1/Music/Alphaville/Forever_Young"])
                   index = index + 1
-              favourites_file = open('carplayer.favourites',"w")
+              favourites_file = open(CARPLAYER_FAVOURITES,"w")
               pickle.dump(self.favourites_database,favourites_file)
               #pickle.dump(self.crap,favourites_file)
               favourites_file.close()
@@ -1087,7 +1107,7 @@ class NCMPY_DATABASE(NCMPY_MOD, NCMPY_SCROLL):
         self.directory_index = 21
         self.file_index = 1
         try:
-           database_file = open('carplayer.database')
+           database_file = open(CARPLAYER_DATABASE)
            self.directory_database = pickle.load(database_file)
            #self.file_database = pickle.load(database_file)
            database_file.close()
@@ -1095,13 +1115,13 @@ class NCMPY_DATABASE(NCMPY_MOD, NCMPY_SCROLL):
               print 'Oh dear.'
               self.mpc.update()
               self.add_mpd_directory_to_database('')
-              database_file = open('carplayer.database',"w")
+              database_file = open(CARPLAYER_DATABASE,"w")
               pickle.dump(self.directory_database,database_file)
               #pickle.dump(self.file_database,database_file)
               database_file.close()
               
         self.load_fav_database()
-        #database_file = open('carplayer.database',"w")
+        #database_file = open(CARPLAYER_DATABASE,"w")
         #pickle.dump(self.directory_database,database_file)
         #pickle.dump(self.file_database,database_file)
         #database_file.close()
@@ -1122,7 +1142,7 @@ class NCMPY_DATABASE(NCMPY_MOD, NCMPY_SCROLL):
        run_cmd("mpc update --wait")
        self.directory_database = [[0,"Fart"]]
        self.add_mpd_directory_to_database('')
-       database_file = open('carplayer.database',"w")
+       database_file = open(CARPLAYER_DATABASE,"w")
        pickle.dump(self.directory_database,database_file)
        #pickle.dump(self.file_database,database_file)
        database_file.close()
@@ -2514,6 +2534,7 @@ class NCMPY():
                     open((FUELUP_COM_FILE, 'a')).close()
         elif c == curses.KEY_PPAGE:
             # MPG Reset Current Values
+                print "RESET Current"
                 open(RESET_CURRENT_FILE, 'a').close()
 
 
