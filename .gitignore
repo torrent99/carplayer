@@ -8,3 +8,8 @@ carplayer.database
 carplayer.favourites
 Adafruit_CharLCD.pyc
 LCD_FAKE.pyc
+Adafruit_CharLCD.pyc
+FAKEIT.pyc
+LCD_FAKE.pyc
+carplayer_database.fake
+carplayer.favourites.fake
