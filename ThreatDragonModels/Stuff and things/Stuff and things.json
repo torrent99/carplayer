@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "title": "Stuff and things",
+    "owner": "Stefve"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "stuff and things",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Me"
+  }
+}
